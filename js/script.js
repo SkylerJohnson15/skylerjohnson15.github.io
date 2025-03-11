@@ -1,7 +1,7 @@
 const navLinks = document.querySelector('.nav-links');
-const burger = document.createElement('div'); // Placeholder for a burger icon
+const burger = document.createElement('div');
 burger.className = 'burger';
-burger.innerHTML = '☰'; // Simple burger symbol
+burger.innerHTML = '<i class="fas fa-bars"></i>'; // Font Awesome icon
 document.querySelector('.navbar').insertBefore(burger, navLinks);
 burger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
