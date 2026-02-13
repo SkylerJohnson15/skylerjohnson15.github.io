@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="Portfolio of Skyler Johnson — Analyst and US Army Veteran. Projects in data analysis, dashboards, and modern AI applications." />
+    <meta name="description" content="Portfolio of Skyler Johnson — US Army Veteran and Analyst. Projects in data analysis, dashboards, and modern AI applications." />
     <meta name="keywords" content="Skyler Johnson, Portfolio, Data Analyst, Python, SQL, Power BI, Streamlit, AI, RAG, OpenAI, Veteran" />
     <meta name="author" content="Skyler Johnson" />
 
@@ -60,11 +60,6 @@
                     <i class="fa-solid fa-briefcase"></i> View Projects
                 </a>
 
-                <!-- Optional: If you have a resume file, put it in /assets and update path below -->
-                <!-- <a href="assets/Skyler_Johnson_Resume.pdf" class="cta-button secondary" target="_blank">
-                    <i class="fa-solid fa-file-arrow-down"></i> Download Resume
-                </a> -->
-
                 <a href="#contact" class="cta-button secondary">
                     <i class="fa-solid fa-paper-plane"></i> Contact
                 </a>
@@ -87,7 +82,7 @@
         <div class="about-content">
             <p>
                 I’m a US Army Veteran turned Analyst with a Bachelor of Science in Computer Information Systems from DeVry University.
-                I build practical, results-driven solutions using Python, SQL, and BI tools — and I’m now expanding into AI/LLM systems.
+                I build practical, results-driven solutions using Python, SQL, and BI tools — and I’m expanding into AI/LLM systems.
                 At Ernst & Young, I contributed to $5M in revenue by identifying risks and supporting audit workstreams.
                 I enjoy turning complex information into clear decisions and polished products.
             </p>
@@ -103,16 +98,26 @@
             <!-- FEATURED PROJECT -->
             <div class="project-card featured reveal">
                 <div class="project-tag">Featured</div>
-                <!-- Use your own screenshot later if you want:
-                     assets/images/atlasdocs-preview.png
-                     For now, this uses an existing image so nothing breaks. -->
+
+                <!-- You can swap this to a real screenshot later -->
                 <img src="assets/images/project2.jpg" alt="AtlasDocs AI Document Assistant" />
+
                 <h3>AtlasDocs — AI Document Assistant (RAG)</h3>
 
                 <p>
                     Built a cloud-deployed Retrieval-Augmented Generation (RAG) app that lets users upload PDFs/TXT files,
                     run semantic search, and receive citation-grounded answers.
                 </p>
+
+                <!-- Tech Icons Row -->
+                <div class="tech-icons" aria-label="Tech stack icons">
+                    <span class="tech-icon" title="Python"><i class="fa-brands fa-python"></i><span>Python</span></span>
+                    <span class="tech-icon" title="Streamlit"><i class="fa-solid fa-layer-group"></i><span>Streamlit</span></span>
+                    <span class="tech-icon" title="OpenAI API"><i class="fa-solid fa-robot"></i><span>OpenAI</span></span>
+                    <span class="tech-icon" title="Vector Search"><i class="fa-solid fa-magnifying-glass"></i><span>Vector</span></span>
+                    <span class="tech-icon" title="PDF"><i class="fa-solid fa-file-pdf"></i><span>PDF</span></span>
+                    <span class="tech-icon" title="GitHub"><i class="fa-brands fa-github"></i><span>GitHub</span></span>
+                </div>
 
                 <ul class="project-bullets">
                     <li>Multi-document ingestion + semantic retrieval</li>
@@ -130,8 +135,62 @@
                 </div>
 
                 <div class="project-stack">
-                    <span>Python</span><span>Streamlit</span><span>OpenAI</span><span>Vector Search</span><span>PDF</span>
+                    <span>RAG</span><span>Embeddings</span><span>Semantic Search</span><span>Grounded Answers</span><span>Deployment</span>
                 </div>
+
+                <!-- Mini Case Study -->
+                <details class="case-study">
+                    <summary><i class="fa-solid fa-book-open"></i> Case Study: How AtlasDocs Works</summary>
+
+                    <div class="case-study-body">
+                        <div class="cs-grid">
+                            <div class="cs-block">
+                                <h4>Problem</h4>
+                                <p>
+                                    Teams store important information in PDFs and internal docs, but searching through them is slow and inconsistent.
+                                    The goal was to enable fast Q&A with answers grounded in the original document text.
+                                </p>
+                            </div>
+
+                            <div class="cs-block">
+                                <h4>Approach</h4>
+                                <p>
+                                    I implemented a RAG pipeline: chunk documents, generate embeddings, retrieve the most relevant chunks via vector search,
+                                    then use an LLM to generate a clear answer with citations.
+                                </p>
+                            </div>
+
+                            <div class="cs-block">
+                                <h4>Architecture</h4>
+                                <div class="cs-arch">
+                                    <span>Upload PDF/TXT</span>
+                                    <span class="arrow">→</span>
+                                    <span>Chunk</span>
+                                    <span class="arrow">→</span>
+                                    <span>Embed</span>
+                                    <span class="arrow">→</span>
+                                    <span>Vector Search</span>
+                                    <span class="arrow">→</span>
+                                    <span>LLM Answer + Citations</span>
+                                </div>
+                            </div>
+
+                            <div class="cs-block">
+                                <h4>What I Learned</h4>
+                                <ul>
+                                    <li>How chunk size/overlap affects retrieval quality</li>
+                                    <li>How to keep answers grounded using citations + context limits</li>
+                                    <li>How to deploy an AI app and manage secrets safely</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="cs-highlight">
+                            <strong>Outcome:</strong> A deployable AI assistant demo that supports multi-document Q&A with citations,
+                            mobile UX improvements, and a clean product-style interface.
+                        </div>
+                    </div>
+                </details>
             </div>
 
             <!-- Existing Projects -->

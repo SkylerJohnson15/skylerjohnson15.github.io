@@ -52,7 +52,7 @@ body {
 .burger {
   font-size: 1.5em;
   cursor: pointer;
-  display: none; /* Hidden on desktop */
+  display: none;
 }
 
 .nav-links {
@@ -88,7 +88,7 @@ body {
 
 .hero-content {
   max-width: 820px;
-  padding-top: 64px; /* account for navbar */
+  padding-top: 64px;
 }
 
 .hero-badge{
@@ -306,6 +306,126 @@ h2 {
   font-weight: 700;
 }
 
+/* Tech Icons Row */
+.tech-icons{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0 12px 0;
+}
+
+.tech-icon{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.04);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  color: var(--text);
+  font-weight: 800;
+  font-size: 0.92rem;
+}
+
+.tech-icon i{
+  font-size: 1.05rem;
+  color: rgba(15, 23, 42, 0.75);
+}
+
+.tech-icon span{
+  color: rgba(15, 23, 42, 0.82);
+  font-weight: 800;
+}
+
+/* Mini Case Study (details) */
+.case-study{
+  margin-top: 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background: rgba(15, 23, 42, 0.02);
+  padding: 10px 12px;
+}
+
+.case-study summary{
+  cursor: pointer;
+  list-style: none;
+  font-weight: 900;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.case-study summary::-webkit-details-marker{ display: none; }
+
+.case-study-body{
+  margin-top: 12px;
+}
+
+.cs-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.cs-block{
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.cs-block h4{
+  margin-bottom: 6px;
+  font-size: 0.98rem;
+  letter-spacing: -0.1px;
+}
+
+.cs-block p, .cs-block li{
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.cs-block ul{
+  margin-left: 18px;
+}
+
+.cs-arch{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.cs-arch span{
+  background: rgba(26,188,156,0.10);
+  border: 1px solid rgba(26,188,156,0.20);
+  color: #0b3b34;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 900;
+}
+
+.cs-arch .arrow{
+  background: transparent;
+  border: none;
+  color: rgba(15, 23, 42, 0.55);
+  font-weight: 900;
+  padding: 0 2px;
+}
+
+.cs-highlight{
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(26,188,156,0.10);
+  border: 1px solid rgba(26,188,156,0.22);
+  color: #0b3b34;
+  font-weight: 700;
+}
+
 /* Additional Images for Sales Data Dashboard */
 .project-images {
   margin-top: 12px;
@@ -460,6 +580,7 @@ footer {
   .hero-subtitle { font-size: 1rem; }
 
   .project-grid { grid-template-columns: 1fr; }
-
   .cta-button { width: 100%; justify-content: center; }
+
+  .tech-icon{ width: 100%; justify-content: center; }
 }
